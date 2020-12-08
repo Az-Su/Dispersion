@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dispersion | Course Programming | Saylau Almaz</title>
+	<link rel="stylesheet" href="Python.css" type="text/css">
+</head>
+<body>
+		<header>
+			<dev id="logo" onclick="slowScroll('#top')">
+				<a href="index.html">Dispersion</a>
+			</dev>
+
+
+
+			<div id="log_reg">
+				<a href="login.html">Login</a>
+				<a href="registration.html">Registration</a>
+			</div>
+		</header>
+
+		<div id="top">
+			<h1>Python</h1>
+		</div>
+
+		<div id="main">
+			<div class="intro">
+				<h2>Why do I need to learn Python?</h2>
+			</div>
+			<div class="text">
+				<span>
+					Python continues to be one of the most popular programming languages. And for many years it has been a leader in the TIOBE rating.
+				</span><br><br>
+				<span>
+					Confident knowledge of the Java language will allow you to easily get a job in large companies that use Java as the main stack.
+				</span><br><br>
+				<span>
+					Python programmers are the highest paid programmers in the industry. Also, Java will always be in the trend and is constantly improving!
+				</span>
+			</div>
+		</div>
+
+		<div id="overview">
+			<h2>What does the course offer?	</h2>
+
+			<div class="img" id="fi">
+			<img src="All images\time.png" alt="">
+			<h2>Duration</h2>
+			<span>2 month / 10 weeks / 3 hours</span>
+			</div>
+			<div class="img">
+				<img src="All images\edu.png" alt="">
+				<h2>Level</h2>
+				<span>Beginner</span>
+			</div>
+			<div class="img">
+				<img src="All images\price.png" alt="">
+				<h2>Price</h2>
+				<span>40 000 KZT/month</span>
+			</div>
+			<div class="img">
+				<img src="All images\skill.png" alt="">
+				<h2>Motivation</h2>
+				<span>Necessarily!</span>
+			</div>
+		</div>
+
+		<div id="contacts">
+			<center><h5><b>Feedback</b></h5></center>
+			<form id="form_input">
+				<label for="name"><b>First Name </b><span>*</span></label><br>
+				<input type="text" placeholder="Enter your name" name="name" id="name"><br>
+				<label for="emai"><b>Your email </b><span>*</span></label><br>
+				<input type="email" placeholder="Enter your email" name="email" id="email"><br>
+				<label for="message"><b>Message </b><span>*</span></label><br>
+				<textarea name="message" placeholder="Enter your message" 	id="message"></textarea><br>
+				<div id="mess_send" class="btn"><b>Send</b></div>
+			</form>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			function slowScroll(id) {
+				$('html, body').animate({
+					scrollTop: $(id).offset().top
+				}, 500)
+			}
+
+			$(document).on("scroll", function () {
+				if($(window).scrollTop() === 0)
+					$("header").removeClass("fixed");
+				else
+					$("header").attr("class", "fixed");
+			});
+		</script>
+
+		<div id="footer">
+			<div class="twocols">
+
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.4899148421287!2d69.70192051545605!3d42.3533973791873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDIxJzEyLjIiTiA2OcKwNDInMTQuOCJF!5e0!3m2!1sru!2skz!4v1588354764982!5m2!1sru!2skz" width="35%" height="100%" frameborder="0" style="border:0; " allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<div class="col2">
+			<h2 style="color: #4F4F4F; padding-top: 30px;">С. ALMATY, ST. ABAY, 25, OFFICE 14 (AN. ST. ABAYA-SAYNA)
+			+7 700 279 03 64
+			INFO@DISPERCION.KZ</h2><br>
+			<p style="font-size: 25px;">&copy;2020 <a href="#">Project for IITU</a></p>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>

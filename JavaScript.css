@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Suez+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #fafafa;
+	font-family: Trebuchet MS, Helvetica;
+}
+
+/*Шапка сайта*/
+
+header {
+	width: 100%;
+	padding: 10px 0.5% 0px 0.5%;
+	background: transparent;
+	float: left;
+	position: fixed;
+}
+
+header #logo {
+	color: #fff;
+	cursor: pointer;
+}
+
+.fixed #logo a {color: #343434}
+
+header #logo > a {
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.7em;
+	line-height: 45px;
+	margin-left: 40px;
+	font-family: 'Suez One', serif;
+	text-decoration: none;
+}
+
+
+header #logo > a {
+	text-decoration: none;
+
+}
+
+@media (min-width: 701px) {
+	#logo {
+		float: left;
+		width: 30%;
+		font-size: 1.1em;
+
+	}
+
+	#about {
+		float: left;
+		width: 39%;
+	}
+
+	#log_reg {
+		float: right;
+		width: 15%;
+	}
+}
+
+@media (max-width: 700px) {
+	#logo {
+		margin-top: 15px;
+		width: 100%;
+		font-size: 1.3em;
+	}
+
+	#about {
+		float: left;
+		width: 100%;
+	}
+
+	#log_reg {
+		float: right;
+		width: 100%;
+	}
+}
+
+#about {
+	text-align: center;
+	font-size: 1.4em;
+	line-height: 40px;
+	margin-bottom: 10px;
+	font-family: 'Suez One', serif;
+	text-decoration: none;
+}
+#about > a {color: #fff}
+
+#about > a:hover {
+	color: #b0b0b0;
+	text-decoration: underline;
+}
+
+#about > a {
+	text-decoration: none;
+}
+
+#about > a:not(:last-child) {
+	margin-right: 3%;
+}
+
+#log_reg {
+	text-align: center;
+	font-size: 1.4em;
+	line-height: 40px;
+	margin-bottom: 10px;
+	font-family: 'Suez One', serif;
+	text-decoration: none;
+}
+
+#log_reg > a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#log_reg > a:not(:last-child) {
+	margin-left: 15	%;
+}
+
+#log_reg >a:hover {
+	color: #b0b0b0;
+	text-decoration: underline;
+}
+
+.fixed #log_reg a {color: #343434}
+.fixed #log_reg a:hover {color: #7c7c7c}
+
+.fixed {
+	z-index: 5000;
+	background-color: #fff;
+	border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+	color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+
+
+
+/*Главный блок сайта*/
+
+#top {
+	width: 100%;
+	height: 1000px;
+	background-image: url(https://miro.medium.com/max/2732/1*LyZcwuLWv2FArOumCxobpA.png);
+	background-blend-mode: multiply;
+	background-color: #2e3a44;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+}
+
+@media (min-width: 1001px) {
+	#top {
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 1000px) and (max-width: 651px){
+	#top {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 650px) {
+	#top {
+		font-size: 1.5em;
+		padding-top: 50%;
+	}
+}
+
+#top h1 {
+	padding-top: 20%;
+}
+#top h3 {
+	color: #ccc;
+}
+
+/* Блок возможностей */
+
+#main {
+	float: left;
+	background-color: #f6f6f6;
+	border-top: 2px silver;
+	color: #484848;
+	font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+	#main {
+		padding: 100px 20%;
+		width: 60%;
+	}
+}
+
+@media (max-width: 1400px) {
+	#main {
+		padding: 100px 10%;
+		width: 80%;
+	}
+}
+
+@media (max-width: 700px) {
+	#main div {
+		width: 98%!important;
+		margin-bottom: 30px;
+	}
+}
+
+#main div {
+	width: 48%;
+	margin-right: 2%;
+	float: left;
+}
+
+#main h2 {font-size: 3em}
+#main span {color: #a0a0a0}
+
+/* Блок Курсов */
+
+#overview {
+	float: left;
+	background-image: url(https://i0.wp.com/3minute.club/wp-content/uploads/2016/08/Yellow-background.png?ssl=1);
+
+	background-blend-mode: multiply;
+	background-color: #2e3a44;
+	background-size: cover;
+	background-attachment: fixed;
+
+	padding: 100px 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+#overview h2 {font-size: 4em}
+#overview span {color: #fff; font-size: 1.5em}
+
+#overview .img {
+	float: left;
+	width: 10%;
+	margin-right: 8%;
+	margin-top: 100px;
+}
+
+#fi {
+	margin-left: 18%
+}
+
+#overview img {
+	padding: 5px;
+	float: left;
+	width: 100%;
+	max-width: 500px;
+}
+
+#overview h2 {
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: 5px;
+	font-family: 'Suez One', serif;
+}
+
+#overview span {
+	float: left;
+	width: 100%;
+	font-size: 1.3em;
+	margin-top: 40px;
+	margin-left: 5px;
+}
+
+@media (max-width: 700px) {
+	#main div {
+		width: 80%!important;
+		margin-right: 0!important;
+		margin-left: 10%!important;
+	}
+}
+/* Блок с контактами */
+
+#contacts {
+	width: 100%;
+	float: left;
+	padding-bottom: 40px;
+	padding-top: 70px;
+	border-top: 4px solid #ccc;
+	background: #f4f4f4;
+}
+
+h1, h2, h3, h4 , h5 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: lighter;
+}
+
+#contacts h5{font-size: 3em; color: #4f4f4f}
+
+#form_input {
+	margin-top: 15px;
+	width: 35%;
+	margin-left: 38%;
+	font-size: 1.1em;
+}
+
+#form_input label {
+	color: #505050;
+	cursor: pointer;
+	font-size: 1.4em;
+	font-family: 'Roboto Slab', serif;
+}
+
+#form_input label > span {
+	color: #e87e7e;
+}
+
+#form_input input, #form_input textarea {
+	margin-bottom: 10px;
+	width: 70%;
+	padding: 10px 2%;
+	border-radius: 7px;
+	border: 2px solid silver;
+	font-size: 0.9em;
+	color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+	border-color: #333;
+}
+
+.btn {
+	float: left;
+	border-radius: 5px;
+	padding: 5px 9px;
+	font-size: 1.2em;
+	background-color: #ec6550;
+	text-shadow: #454545 0 0 2px;
+	cursor: pointer;
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+.btn:hover {
+	background-color: #c15443;
+}
+
+
+/* Footer */
+
+#footer {
+    height: 12em;
+    padding: 20px;
+    background: #5F919E;
+    border-top: 2px dashed #e4e3e3;
+}
+
+#footer p {
+    margin: 0;
+    text-align: center;
+    line-height: normal;
+    font-size: 85%;
+    color: #4F4F4F;
+}
+
+#footer a {
+    color: #4F4F4F;
+}
+#footer .twocols  iframe{
+	margin-top: 20px;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+#footer .twocols .col2 {
+	margin-right: 13%;
+    width: 20%;
+    height: 50%;
+}
+#footer .twocols .col2 {
+    width: 500px;
+
+}
+#footer .twocols2 .col1, .twocols2 .col2 {
+    width: 190px;
+    padding-top: 20px;
+}
+
+
+
+#footer .twocols .col2 {
+    float: right;
+}
+
+#footer .twocols h2{
+    text-align: center;
+}
